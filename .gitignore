@@ -1,0 +1,91 @@
+# ──────────────────────────────────────────────────────────────
+# Prism RPC — .gitignore
+# ──────────────────────────────────────────────────────────────
+
+# ─── .NET / Build output ──────────────────────────────────────
+bin
+obj
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+build/
+bld/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+publish/
+*.exe
+*.dll
+*.pdb
+*.exe.config
+*.deps.json
+*.runtimeconfig.json
+*.nuget.g.props
+*.nuget.g.targets
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ─── Visual Studio / Rider / VS Code ──────────────────────────
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.DotSettings.user
+
+# ─── MSBuild ──────────────────────────────────────────────────
+*.binlog
+*.buildlog
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# ─── NuGet ────────────────────────────────────────────────────
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+!packages/build/
+!packages/**/*.targets
+!packages/**/*.props
+
+# ─── Test results / coverage ──────────────────────────────────
+[Tt]est[Rr]esult*/
+TestResult.xml
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# ─── Prism RPC runtime files (geradas ao correr) ──────────────
+# O config.json e o log são gerados em runtime e ficam na pasta
+# ao lado do exe — mas se correres o projeto a partir da raiz
+# também podem aparecer aqui. Ignoramos tudo.
+config/
+config.json
+prism_rpc.log
+
+# ─── Sistema operativo ────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ─── Ficheiros temporários ────────────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+~$*
